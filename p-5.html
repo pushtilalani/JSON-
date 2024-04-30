@@ -1,0 +1,36 @@
+<!-- Nested object using for in loop -->
+
+
+
+<html>
+    <body>
+        <div id="myid"></div>
+        <script>
+
+            var obj={
+                "name" : "jet",
+                "address" : {
+                    "course1" : "FSD-II",
+                    "course2" : "COA"
+                },
+                "city" : "Ahmedabad"
+            }
+
+           var x = " ";
+           for(var i in obj.address) {
+            x += obj.address[i] + "<br>"
+           }
+
+           document.getElementById("myid").innerHTML = x;
+
+        </script>
+    </body>
+</html>
+
+
+
+<!-- output -->
+
+
+<!-- FSD-II
+     COA      -->
