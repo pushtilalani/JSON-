@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <div id="myid"></div>
+        <script>
+
+            var obj={
+                 "name" : "sova",
+                 "mobile" : "123456",
+                 "course" : ['FSD','COA','TOC']
+             }
+
+           var c1=obj.course[1];
+           var c2=obj.course[2];
+
+            /*modify*/
+            var c1=obj.course[1]="python";
+
+           document.getElementById("myid").innerHTML = c1 + "<br>" + c2 + "<br>";
+
+        </script>
+    </body>
+</html>
+
+
+
+<!-- output -->
+
+<!--
+python
+TOC -->
