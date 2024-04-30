@@ -1,0 +1,32 @@
+
+<!-- Method-3 (Using for in loop)-->
+
+
+
+
+
+<html>
+    <body>
+        <div id="myid"></div>
+        <script>
+
+            var obj={
+                "name" : "pqr",
+                "number" : 6,
+            }
+
+           for(var i in obj) {
+            document.getElementById("myid").innerHTML += i + " : " + obj[i] + "<br>"
+           }
+
+        </script>
+    </body>
+</html>
+
+
+
+<!-- output -->
+
+<!--
+name : pqr
+number : 6 -->
