@@ -1,0 +1,35 @@
+
+<!-- Nested object -->
+
+
+
+<html>
+    <body>
+        <div id="myid"></div>
+        <script>
+
+            var obj={
+                "name" : "jet",
+                "address" : {
+                    "course1" : "FSD-II",
+                    "course2" : "COA"
+                },
+                "city" : "Ahmedabad"
+            }
+
+            c1=obj.address.course1;
+            c2=obj.city;
+
+            document.getElementById("myid").innerHTML = c1 + "<br>" + c2;
+
+        </script>
+    </body>
+</html>
+
+
+
+<!-- output -->
+
+<!--
+FSD-II
+Ahmedabad -->
