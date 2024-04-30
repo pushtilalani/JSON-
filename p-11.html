@@ -1,0 +1,28 @@
+<!-- Array of objects -->
+
+
+
+<html>
+    <body>
+        <div id="myid"></div>
+        <script>
+
+           var a={
+            "DataStructures" : [{
+                "name" : "xyz",
+                "content" : ["B","C"]
+            },
+            {
+                "name" : "pqr",
+                "content" : ["X","Y"]
+            }
+            ]
+           }
+
+           var p = a.DataStructures[0].content[1];
+
+           document.getElementById("myid").innerHTML = p + "<br>";          // C
+
+        </script>
+    </body>
+</html>
