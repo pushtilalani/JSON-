@@ -1,0 +1,36 @@
+
+<!-- Method-2 using simple for loop  -->
+
+
+
+<html>
+    <body>
+        <div id="myid"></div>
+        <script>
+
+            var obj={
+                 "name" : "sova",
+                 "mobile" : "123456",
+                 "course" : ['FSD','COA','TOC']
+             }
+
+             var x = " ";
+             for(var i=0; i<obj.course.length;i++) {
+                x += obj.course[i] + "<br>"
+             }
+
+           document.getElementById("myid").innerHTML = x;
+
+        </script>
+    </body>
+</html>
+
+
+
+<!-- output -->
+
+
+<!--
+FSD
+COA
+TOC -->
