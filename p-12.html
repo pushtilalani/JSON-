@@ -1,0 +1,31 @@
+
+
+<html>
+    <body>
+        <div id="myid"></div>
+        <script>
+
+           var jsonObj = {
+            "FIFA" : [{
+                "country" : "Brazil",
+                "player" : "xyz"
+            },
+            {
+                "country" : "portugal",
+                "player" : "pqr"
+            },
+            {
+                "country" : "argentina",
+                "player" : "abc"
+            }]
+           }
+
+           for(var x in jsonObj.FIFA){
+            for(var i in jsonObj.FIFA[x]){
+                document.writeln(jsonObj.FIFA[x][i]);         // Brazil xyz portugal pqr argentina abc
+            }
+           }
+
+        </script>
+    </body>
+</html>
